@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Venus Lab 01</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="paper">
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div>
+
+            <div class="brand">
+                VENUS
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- COLLECTION CONTROL -->
+
+    <section class="control">
+
+
+        <div class="control-label">
+            COLLECTION INTERVAL
+        </div>
+
+
+        <div class="control-line">
+
+
+            <input
+                id="intervalInput"
+                type="number"
+                min="1"
+                placeholder="10"
+            >
+
+
+            <span>
+                seconds
+            </span>
+
+
+            <button id="setBtn">
+                Start
+            </button>
+
+
+        </div>
+
+
+
+        <div class="control-status">
+
+
+            <span>
+
+                SET INTERVAL:
+
+                <b id="currentInterval">
+                    —
+                </b>
+
+            </span>
+
+
+            <span>
+
+                NEXT:
+
+                <b id="countdown">
+                    —
+                </b>
+
+            </span>
+
+
+        </div>
+
+
+        <div id="message">
+
+            Ready for collection.
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- RECORDS -->
+
+    <main>
+
+
+        <div class="records-heading">
+            Records
+        </div>
+
+
+
+        <div class="records-table">
+
+
+            <!-- TABLE HEADER -->
+
+            <div class="record-header">
+
+                <div>
+                    DATE
+                </div>
+
+                <div>
+                    TIME
+                </div>
+
+                <div>
+                    FLOAT
+                </div>
+
+                <div>
+                    INTEGER
+                </div>
+
+            </div>
+
+
+
+            <!-- RECORDS -->
+
+            <div id="records">
+
+                <div class="empty">
+
+                    No observations recorded.
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+
+        <span>
+            Venus Jean Pamplona
+        </span>
+
+
+        <span>
+
+            <b id="recordCount">
+                0
+            </b>
+
+            observations
+
+        </span>
+
+
+    </footer>
+
+
+</div>
+
+
+
+<script
+    type="module"
+    src="script.js"
+></script>
+
+
+</body>
+
+</html>
